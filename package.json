@@ -3,7 +3,13 @@
 	"verseion": "0.0.1",
 	"author": "LeoVicio",
 	"main": "ogsing_server.js",
+	"scripts": {
+    "start": "node ogsing_server.js"
+    },
 	"type": "module",
+	"engines": {
+    "node": "16.x"
+    },
 	"dependencies": {
 		"cors": "^2.8.5",
 		"dotenv": "^16.0.0",
