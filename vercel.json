@@ -5,11 +5,5 @@
       "src": "ogsing_server.js",
       "use": "@now/node"
     }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "ogsing_server.js"
-    }
   ]
 }
