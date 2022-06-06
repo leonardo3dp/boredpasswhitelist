@@ -1,0 +1,13 @@
+{
+	"type": "module",
+	"main": "ogsing_server.js",
+	"dependencies": {
+		"cors": "^2.8.5",
+		"dotenv": "^16.0.0",
+		"ethers": "^5.6.4",
+		"express": "^4.18.1",
+		"keccak256": "^1.0.6",
+		"merkletreejs": "^0.2.31",
+		"web3": "^1.7.3"
+	}
+}
