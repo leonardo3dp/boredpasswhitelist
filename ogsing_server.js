@@ -22,7 +22,7 @@ async function get_og_signature(wallettest){
 	
 	if(found !== undefined){
 		
-		var w = new ethers.Wallet('f284d998f35e186d3909fdd9accdef34b4d0298130f7c193a308baf407ffacce'); //OG privkey
+		var w = new ethers.Wallet(process.env.OGPRIVATE); //OG privkey
 		//console.log('Signer wallet',w.address);
 		let messageHash = ethers.utils.solidityKeccak256(['address'], [found]);
 		let signature = await w.signMessage(ethers.utils.arrayify(messageHash));
@@ -38,7 +38,7 @@ async function get_signature(wallettest){
 	
 	if(found !== undefined){
 		
-		var w = new ethers.Wallet('1f1c7467fcd5e8e5fc1186190cb7d1daa50ff84d22ced82a7cc533859246c14f'); //privkey
+		var w = new ethers.Wallet(process.env.WLPRIVATE); //privkey
 		//console.log('Signer wallet',w.address);
 		let messageHash = ethers.utils.solidityKeccak256(['address'], [found]);
 		let signature = await w.signMessage(ethers.utils.arrayify(messageHash));
