@@ -4,12 +4,6 @@
 	"author": "LeoVicio",
 	"main": "ogsing_server.js",
 	"type": "module",
-	 "builds": [
-        {
-            "src": "./ogsing_server.js",
-            "use": "@vercel/node"
-        }
-    ],
 	"dependencies": {
 		"cors": "^2.8.5",
 		"dotenv": "^16.0.0",
